@@ -61,7 +61,7 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 
 /************************* main *******************************/
 
-/* 記事 */
+/* 記事カテゴリー */
 
 .kijicat {
   margin-bottom: 25px;
@@ -99,10 +99,19 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   clear: both;
 }
 
+/* 記事本体 */
+
 .kiji h1 {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 36px;
+}
+
+.kiji h2 {
+  margin-top: 40px;
+  padding-left: 10px;
+  border-left: 10px solid #7cbac1;
+  font-weight: normal;
 }
 
 .kiji p {
@@ -114,6 +123,8 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   max-width: 100%;
   height: auto;
 }
+
+/* 記事の投稿日 */
 
 .kijiinfo {
   margin-top: -10px;
