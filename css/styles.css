@@ -8,12 +8,14 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 
 .site h1 a {
   text-decoration: none;
-  color: #000000;
+  color: #83a4a8;
 }
 
 .site h1 {
   margin: 0;
   font-size: 30px;
+  font-family: 'Paytone One', sans-serif;
+  font-weight: normal;
 }
 
 .box1 {
