@@ -2,6 +2,8 @@
 
 body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 
+/********************** header ****************************/
+
 /* サイト名 */
 
 .site h1 a {
@@ -12,6 +14,10 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 .site h1 {
   margin: 0;
   font-size: 30px;
+}
+
+.box1 {
+  padding: 8px 0;
 }
 
 /* ナビゲーション */
@@ -25,13 +31,13 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 .menu li a {
   text-decoration: none;
   font-size: 14px;
-  padding: 5px;
+  padding: 15px;
   color: #000000;
   display: block;
 }
 
 .menu li a:hover {
-  background-color: #eeeeee;
+  background-color: #75dbe7;
 }
 
 .menu li {
@@ -44,6 +50,14 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   display: block;
   clear:both;
 }
+
+.box2 {
+  background-color: #7cbac1;
+}
+
+/************************* headerここまで *********************/
+
+/************************* main *******************************/
 
 /* 記事 */
 
@@ -63,7 +77,11 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   height: auto;
 }
 
-/* サイドメニュー */
+.box3 {
+  padding: 40px 0 30px;
+}
+
+/******** サイドメニュー *******/
 
 /* 特集 */
 
@@ -157,12 +175,25 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   background-color: #eeeeee;
 }
 
+.box4 {
+  padding: 40px 0 30px;
+}
+
+/*********************** mainここまで *********************/
+
+/******************* footer **************************/
+
 /* コピーライト */
 
 .copyright {
   margin: 0;
   color: #666666;
   font-size: 14px;
+}
+
+.box5 {
+  border-top: 1px solid #dddddd;
+  padding: 15px 0;
 }
 
 /******************* レスポンシブ ********************/
@@ -179,4 +210,11 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 .box4	{float: left;
 	width: 30%}
 
+/* BOX3とBOX4の左右の間隔 */
+
+.box3 {
+  padding-right: 50px;
+  box-sizing: border-box;
 }
+
+} /* レスポンシブ 768以上の設定ここまで */
