@@ -189,6 +189,56 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   background-color: #dd4b39;
 }
 
+/****************** 関連記事 ***********************/
+
+.kanren {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f0f0d4;
+}
+
+.kanren h1 {
+  margin: 0 0 5px;
+  color: #727224;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.kanren ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kanren li a {
+  display: block;
+  padding: 5px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.kanren li a:hover {
+  text-decoration: underline;
+}
+
+.kanren li {
+  float: left;
+  width: 25%;
+}
+
+.kanren ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.kanren img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
 /***************** サイドバー ********************/
 
 /* 特集 */
@@ -404,6 +454,20 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 .share span {
   display: inline-block;
   text-indent: -9999px;
+}
+
+/* 関連記事を2列にする */
+
+.kanren {
+  padding: 10px;
+}
+
+.kanren li {
+  width: 50%;
+}
+
+.kanren li:nth-child(3n) {
+  clear: both;
 }
 
 
