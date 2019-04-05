@@ -79,6 +79,17 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   height: auto;
 }
 
+.kijiinfo {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.kijiinfo i {
+  margin-right: 5px;
+  color: #aaaaaa;
+  font-size: 20px;
+}
+
 .box3 {
   padding: 40px 0 30px;
 }
