@@ -197,8 +197,74 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 }
 
 /******************* レスポンシブ ********************/
-@media (min-width: 768px) {
 
+/*********** 599px以下 *************/
+@media (max-width: 599px) {
+
+/* サイト名と記事タイトルを小さく */
+
+.site h1 {
+  font-size: 20px;
+}
+
+.kiji h1 {
+  font-size: 26px;
+}
+
+.box1 {
+  padding: 4px 0;
+}
+
+/* ナビゲーション */
+
+.menu li a {
+  padding: 10px 3px;
+  font-size: 11px;
+}
+
+/* boxの間隔 */
+
+.box3 {
+  padding-top: 25px;
+}
+
+}
+
+/*********** 600px～767px ************/
+@media (min-width: 600px) and (max-width: 767px) {
+
+/* box4-1とbox4-2を横に並べる */
+.box4-1 {
+  float: left;
+  width: 50%;
+}
+
+.box4-2 {
+  float: left;
+  width: 50%;
+}
+
+.box4::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* box4-1とbox4-2の間隔を調整 */
+.box4-1 {
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.box4-2 {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+}
+
+/*********** 768px～ ************/
+@media (min-width: 768px) {
 /* BOX3とBOX4を横に並べる設定 */
 .boxA:after	{content: "";
 	display: block;
@@ -217,4 +283,16 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   box-sizing: border-box;
 }
 
-} /* レスポンシブ 768以上の設定ここまで */
+}
+
+/*********** 1040px～ ************/
+@media (min-width: 1040px) {
+
+/* 全体の横幅を固定する */
+.box1, .box2, .boxA, .box5 {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
