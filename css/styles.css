@@ -141,7 +141,55 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
   padding: 40px 0 30px;
 }
 
-/***************** サイドメニュー ********************/
+/* シェアボタン */
+
+.share {
+  margin-top: 40px;
+}
+
+.share ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.share li a {
+  display: block;
+  padding: 10px 5px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.share li a:hover {
+  opacity: 0.8;
+}
+
+.share li {
+  float: left;
+  width: 33.3333%;
+}
+
+.share ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.share-tw {
+  background-color: #55acee;
+}
+
+.share-fb {
+  background-color: #3b5998;
+}
+
+.share-gp {
+  background-color: #dd4b39;
+}
+
+/***************** サイドバー ********************/
 
 /* 特集 */
 
@@ -350,6 +398,14 @@ body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 .box3 {
   padding-top: 25px;
 }
+
+/* シェアボタン */
+
+.share span {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
 
 }
 
