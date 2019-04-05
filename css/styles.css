@@ -2,6 +2,89 @@
 
 body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 
+/* サイト名 */
+
+.site h1 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.site h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+/* ナビゲーション */
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px;
+  color: #000000;
+  display: block;
+}
+
+.menu li a:hover {
+  background-color: #eeeeee;
+}
+
+.menu li {
+  float: left;
+  width: auto;
+}
+
+.menu ul::after {
+  content: "";
+  display: block;
+  clear:both;
+}
+
+/* 記事 */
+
+.kiji h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.kiji p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/* サイドメニュー */
+
+.sidemenu h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: dashed 2px #dddddd;
+  color: #666666;
+  font-size: 18px;
+}
+
+.sidemenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidemenu li a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px;
+  color: #000000;
+  display: block;
+}
+
+.sidemenu li a:hover {
+  background-color: #eeeeee;
+}
 
 @media (min-width: 768px) {
 
