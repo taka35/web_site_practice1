@@ -409,6 +409,64 @@ body	{
   padding: 40px 0 30px;
 }
 
+/********************* トップページのCSS ********************/
+
+/* 概要 */
+
+.gaiyou {
+  margin-bottom: 20px;
+}
+
+.gaiyou a {
+  display: block;
+  border: 1px solid #dddddd;
+  color: #000000;
+  text-decoration: none;
+}
+
+.gaiyou a:hover {
+  box-shadow: 0 0 10px #dddddd;
+}
+
+.gaiyou img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  margin-bottom: 15px;
+  vertical-align: bottom;
+}
+
+.gaiyou h1 {
+  margin: 0 15px 5px;
+  font-size: 22px;
+}
+
+.gaiyou p {
+  margin: 0 15px 15px;
+  font-size: 14px;
+}
+
+/* 続きを読む */
+
+.more {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #3077be;
+  color: #ffffff;
+}
+
+.more i {
+  margin-left: 10px;
+}
+
+/* boxAの間隔 */
+
+.top .boxA {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 /*********************** mainここまで *********************/
 
 /******************* footer **************************/
@@ -482,6 +540,37 @@ body	{
 
 }
 
+
+/********************** 600px～ **********************/
+@media (min-width: 600px) {
+
+  /* トップページの概要を2列に並べる */
+
+  .boxA-1 .gaiyou {
+    float: left;
+    width: 50%;
+  }
+
+  .boxA-1::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+.boxA-1 .gaiyou:nth-child(odd) {
+  padding-right: 15px;
+  box-sizing: border-box;
+  clear: both;
+}
+
+.boxA-1 .gaiyou:nth-child(even) {
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+}
+
+
 /*********** 600px～767px ************/
 @media (min-width: 600px) and (max-width: 767px) {
 
@@ -533,6 +622,12 @@ body	{
 .box3 {
   padding-right: 50px;
   box-sizing: border-box;
+}
+
+/* トップページのピックアップ */
+
+.pickup h1 {
+  font-size: 30px;
 }
 
 }
