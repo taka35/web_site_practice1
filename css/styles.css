@@ -459,6 +459,37 @@ body	{
   margin-left: 10px;
 }
 
+/* ピックアップ記事のバッジ */
+
+.badge {
+  width: 120px;
+  height: 120px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  background-color: #00a0e9;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 4px #aaaaaa;
+}
+
+.badge i {
+  display: block;
+  font-size: 40px;
+}
+
+/* バッジの位置を設定 */
+
+.pickup {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 44%;
+  right: -15px;
+}
+
 /* ページネーション */
 
 .pagenation {
@@ -530,6 +561,15 @@ body	{
 
 /*********** 599px以下 *************/
 @media (max-width: 599px) {
+
+/* バッジの調整 */
+
+.badge {
+  transform: scale(0.5);
+  transform-origin: top right;
+  top: -8px;
+  right: 10px;
+}
 
 /* サイト名と記事タイトルを小さく */
 
@@ -615,6 +655,13 @@ body	{
 
 /*********** 600px～767px ************/
 @media (min-width: 600px) and (max-width: 767px) {
+
+/* バッジの表示位置調整 */
+
+.badge {
+  top: 30%;
+  right: 15px;
+}
 
 /* box4-1とbox4-2を横に並べる */
 .box4-1 {
