@@ -459,6 +459,48 @@ body	{
   margin-left: 10px;
 }
 
+/* ページネーション */
+
+.pagenation {
+  text-align: center;
+}
+
+.pagenation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.pagenation li a {
+  display: block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #000000;
+  border: 1px solid #aaaaaa;
+  text-decoration: none;
+}
+
+.pagenation li a.active {
+  background-color: #cccccc;
+}
+
+.pagenation li a:hover {
+  background-color: #eeeeee;
+}
+
+.pagenation li {
+  float: left;
+  width: auto;
+}
+
+.pagenation ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* boxAの間隔 */
 
 .top .boxA {
